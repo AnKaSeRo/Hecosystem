@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hecosystem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      
+      <div id="partialsidebar"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#partialsidebar').load('partials/_sidebar.html');
+            });
+        </script>
+
+
+      <div class="container-fluid page-body-wrapper">
+
+        <div id="partialsettings"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#partialsettings').load('partials/_settings.html');
+            });
+        </script>
+
+        <div class="main-panel pt-0">
+          <div class="content-wrapper pb-0">
+            <div class="page-header">
+              <h3 class="mb-0"> Novedades </h3>
+            </div>
+            <div class="row">
+              <div class="col-xl-3 col-lg-12 stretch-card grid-margin">
+                <div class="row">
+                  <div class="col-xl-12 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card bg-primary">
+                      <div class="card-body px-3 py-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0 color-card-head">Orden #4567</p>
+                            <hr>
+                          </div>
+                         
+                        </div>
+                        <h6 class="text-white">Pellentesque ac viverra neque, et malesuada sem. Nam bibendum tortor id est consequat pretium. Morbi sit amet turpis nulla. Donec ac ultrices dui. Nulla facilisi. Fusce vulputate ultrices nibh, eu viverra turpis iaculis sit amet. Praesent et augue gravida, euismod tellus ac, faucibus turpis. Proin imperdiet malesuada ligula, vel interdum ante mollis eu. Nunc turpis dui, interdum in sem vel, accumsan euismod dolor.</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card bg-primary-subtle">
+                      <div class="card-body px-3 py-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0 color-card-head text-dark">Orden #4560</p>
+                            <hr>
+                          </div>
+                        </div>
+                        <h6 class="">Pellentesque ac viverra neque, et malesuada sem. Nam bibendum tortor id est consequat pretium. Morbi sit amet turpis nulla. Donec ac ultrices dui. Nulla facilisi. Fusce vulputate ultrices nibh, eu viverra turpis iaculis sit amet. Praesent et augue gravida, euismod tellus ac, faucibus turpis. Proin imperdiet malesuada ligula, vel interdum ante mollis eu. Nunc turpis dui, interdum in sem vel, accumsan euismod dolor.</h6>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  
+                </div>
+              </div>
+              <div class="col-xl-9 stretch-card grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <h5>Informes y Estadisticas</h5>
+                        <!-- <p class="text-muted"> Show overview jan 2018 - Dec 2019 <a class="text-muted font-weight-medium pl-2" href="#"><u>See Details</u></a>
+                        </p> -->
+                      </div>
+                      <!-- <div class="col-sm-5 text-md-right">
+                        <button type="button" class="btn btn-icon-text mb-3 mb-sm-0 btn-inverse-primary font-weight-normal">
+                          <i class="mdi mdi-email btn-icon-prepend"></i>Download Report </button>
+                      </div> -->
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="card mb-3 mb-sm-0">
+                          <div class="card-body py-3 px-4">
+                            <p class="m-0 survey-head">Total Ganancias</p>
+                            <div class="d-flex justify-content-between align-items-end flot-bar-wrapper">
+                              <div>
+                                <h3 class="m-0 survey-value">$5,300</h3>
+                                <p class="text-success m-0">-310 avg. pesos</p>
+                              </div>
+                              <div id="earningChart" class="flot-chart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card mb-3 mb-sm-0">
+                          <div class="card-body py-3 px-4">
+                            <p class="m-0 survey-head">Producto Vendido</p>
+                            <div class="d-flex justify-content-between align-items-end flot-bar-wrapper">
+                              <div>
+                                <h3 class="m-0 survey-value">$9,100</h3>
+                                <p class="text-danger m-0">-310 avg. pesos</p>
+                              </div>
+                              <div id="productChart" class="flot-chart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body py-3 px-4">
+                            <p class="m-0 survey-head">Ordenes Totales</p>
+                            <div class="d-flex justify-content-between align-items-end flot-bar-wrapper">
+                              <div>
+                                <h3 class="m-0 survey-value">$4,354</h3>
+                                <p class="text-success m-0">-310 avg. pesos</p>
+                              </div>
+                              <div id="orderChart" class="flot-chart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-3">
+                      <div class="col-sm-12">
+                        <div class="flot-chart-wrapper">
+                          <div id="flotChart" class="flot-chart">
+                            <canvas class="flot-base"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <p class="text-muted mb-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </p>
+                      </div>
+                      <div class="col-sm-4">
+                        <p class="mb-0 text-muted">Ganacias</p>
+                        <h5 class="d-inline-block survey-value mb-0"> $2,45,500 </h5>
+                        <p class="d-inline-block text-danger mb-0"> ultimos 3 meses </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-8 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body px-0 overflow-auto">
+                    <h4 class="card-title pl-4">Control Trabajadores</h4>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead class="bg-light">
+                          <tr>
+                            <th>Trabajador</th>
+                            <th>Puesto</th>
+                            <th>Actividades</th>
+                            <th>Evaluación</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/faces/face1.jpg" alt="image" />
+                                <div class="table-user-name ml-3">
+                                  <p class="mb-0 font-weight-medium"> Miranda Gomez </p>
+                                  
+                                </div>
+                              </div>
+                            </td>
+                            <td>Administrador</td>
+                            <td>
+                              <div class="badge badge-inverse-success"> Completedo </div>
+                            </td>
+                            <td>100%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/faces/face10.jpg" alt="image" />
+                                <div class="table-user-name ml-3">
+                                  <p class="mb-0 font-weight-medium"> Victor Serrano </p>
+                                  
+                                </div>
+                              </div>
+                            </td>
+                            <td>Admin</td>
+                            <td>
+                              <div class="badge badge-inverse-success"> Completado </div>
+                            </td>
+                            <td>90%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/faces/face11.jpg" alt="image" />
+                                <div class="table-user-name ml-3">
+                                  <p class="mb-0 font-weight-medium"> Aida Romero </p>
+                                  
+                                </div>
+                              </div>
+                            </td>
+                            <td>Ingeniero</td>
+                            <td>
+                              <div class="badge badge-inverse-danger"> No Completado </div>
+                            </td>
+                            <td>50%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/faces/face13.jpg" alt="image" />
+                                <div class="table-user-name ml-3">
+                                  <p class="mb-0 font-weight-medium"> Dario Gonzalez </p>
+                                  
+                                </div>
+                              </div>
+                            </td>
+                            <td>Manager</td>
+                            <td>
+                              <div class="badge badge-inverse-success"> Completado </div>
+                            </td>
+                            <td>80%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/faces/face16.jpg" alt="image" />
+                                <div class="table-user-name ml-3">
+                                  <p class="mb-0 font-weight-medium"> Ian Flores </p>
+                                  
+                                </div>
+                              </div>
+                            </td>
+                            <td>Administrador</td>
+                            <td>
+                              <div class="badge badge-inverse-danger"> No Completado </div>
+                            </td>
+                            <td>20%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <a class="text-black mt-3 d-block pl-4" href="trabajadores.html">
+                      <span class="font-weight-medium h6">Ver más</span>
+                      <i class="mdi mdi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 grid-margin stretch-card">
+                <!--datepicker-->
+                <div class="card">
+                  <div class="card-body">
+                    <div id="inline-datepicker" class="datepicker table-responsive"></div>
+                  </div>
+                </div>
+                <!--datepicker ends-->
+              </div>
+            </div>
+            
+            
+           
+          </div>
+          
+          <div id="partialfooter"></div>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+              $(document).ready(function() {
+                  $('#partialfooter').load('partials/_footer.html');
+              });
+          </script>
+
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+
+
+
+
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.pie.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

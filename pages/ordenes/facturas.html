@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hecosystem</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="../../assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <div class="text-center sidebar-brand-wrapper d-flex align-items-center justify-content-start">
+              <p class="sidebar-brand brand-logo w-50"><img src="../../img/logo.png" alt="logo" /></p>
+              <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            </div>
+            <ul class="nav">
+              <li class="nav-item nav-profile">
+                <a href="#" class="nav-link">
+                  <div class="nav-profile-image">
+                    <img src="../../assets/images/faces/face1.jpg" alt="profile" />
+                    <span class="login-status online"></span>
+                    <!--change to offline or busy as needed-->
+                  </div>
+                  <div class="nav-profile-text d-flex flex-column pr-3">
+                    <span class="font-weight-medium mb-2"><span>#</span>09871267aeb</span>
+                    <span class="font-weight-normal text-capitalize">manager</span>
+                  </div>
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link" href="../../main.html">
+                  <i class="mdi mdi-home menu-icon"></i>
+                  <span class="menu-title">Inicio Rápido</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ordenes" aria-expanded="false" aria-controls="ordenes">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Ordenes de Compra</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ordenes">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="ingresar.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="busqueda.html">Búsqueda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="facturas.html">Facturación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="graficas.html">Informes y Estadísticas</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#adqui" aria-expanded="false" aria-controls="adqui">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Adquisición</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="adqui">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Generar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Facturación</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#pagos" aria-expanded="false" aria-controls="pagos">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Pagos</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="pagos">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pagos Entrantes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pagos Salientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Generación de informes</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#citas" aria-expanded="false" aria-controls="citas">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Citas</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="citas">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Calendario</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#repor" aria-expanded="false" aria-controls="repor">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Reportes</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="repor">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Generar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#prove" aria-expanded="false" aria-controls="prove">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Proveedores</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="prove">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Agregar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#inven" aria-expanded="false" aria-controls="inven">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Inventario</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="inven">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Agregar Nuevo Producto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Generación de pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Generación de lista de existencias</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#envios" aria-expanded="false" aria-controls="envios">
+                  <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                  <span class="menu-title">Envios</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="envios">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+          
+          
+              <li class="nav-item sidebar-actions">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#traba" aria-expanded="false" aria-controls="traba">
+                      <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                      <span class="menu-title">Control Trabajadores</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="traba">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Registro de Empleados y Visualización</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Seguimiento de actividades</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Evaluación de Desempeño</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#usuario" aria-expanded="false" aria-controls="usuario">
+                      <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                      <span class="menu-title">Nuevo Usuario</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="usuario">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Ingresar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+              </li>
+            </ul>
+        </nav>
+
+        
+
+
+
+
+      <div class="container-fluid page-body-wrapper">
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close mdi mdi-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-default-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div> Default
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div> Dark
+          </div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles light"></div>
+            <div class="tiles dark"></div>
+          </div>
+        </div>
+      
+        <div class="main-panel pt-0">
+            <div class="content-wrapper pb-0">
+                <div class="page-header">
+                  <h3 class="mb-0"> Ingresa los datos de facturación </h3>
+                </div>
+                
+                <div class="col-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title mb-5">Datos a ingresar</h2>
+                        <form class="form-sample">
+                          
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Número del pedido</label>
+                                <div class="col-sm-9">
+                                  <input type="number" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Fecha del pedido</label>
+                                <div class="col-sm-9">
+                                  <input class="form-control" placeholder="dd/mm/yyyy" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group row p-3">
+                                <label for="exampleTextarea1">Detalles de los productos pedidos</label>
+                                <textarea
+                                class="form-control"
+                                id="exampleTextarea1"
+                                rows="4"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <hr>
+    
+                          <p class="card-description">Información fiscal</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Nombre</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Dirección</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" />
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <p class="card-description">Información legal</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Nombre</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Dirección</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" />
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+    
+    
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group row p-3">
+                                <label for="exampleTextarea1">Términos y Condiciones</label>
+                                <textarea
+                                class="form-control"
+                                id="exampleTextarea1"
+                                rows="4"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+    
+    
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Precio Subtotal</label>
+                                <div class="col-sm-9">
+                                  <input type="number" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Precio Total de la Compra</label>
+                                <div class="col-sm-9">
+                                  <input type="number" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Persona que autoriza el pedido</label>
+                                <div class="col-sm-9">
+                                  <select class="form-control">
+                                    <option>Persona 1</option>
+                                    <option>Persona 2</option>
+                                    <option>Persona 3</option>
+                                    <option>Persona 4</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <button type="submit" class="btn btn-primary mr-2"> Submit </button>
+                          <button class="btn btn-light">Cancel</button>
+    
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                
+                          
+                              
+                              
+                      
+                </div>
+            
+            
+           
+          </div>
+          <footer class="footer">
+            <!-- <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard template</a> from Bootstrapdash.com</span>
+            </div> -->
+          </footer>
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+
+
+
+
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="../../assets/vendors/flot/jquery.flot.pie.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

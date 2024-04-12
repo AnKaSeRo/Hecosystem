@@ -1,0 +1,227 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <div class="text-center sidebar-brand-wrapper d-flex align-items-center justify-content-start">
+    <p class="sidebar-brand brand-logo w-50"><img src="img/logo.png" alt="logo" /></p>
+    <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+  </div>
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <a href="#" class="nav-link">
+        <div class="nav-profile-image">
+          <img src="assets/images/faces/face1.jpg" alt="profile" />
+          <span class="login-status online"></span>
+          <!--change to offline or busy as needed-->
+        </div>
+        <div class="nav-profile-text d-flex flex-column pr-3">
+          <span class="font-weight-medium mb-2"><span>#</span>09871267aeb</span>
+          <span class="font-weight-normal text-capitalize">manager</span>
+        </div>
+      </a>
+    </li>
+    <hr>
+    <li class="nav-item">
+      <a class="nav-link" href="main.html">
+        <i class="mdi mdi-home menu-icon"></i>
+        <span class="menu-title">Inicio Rápido</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#ordenes" aria-expanded="false" aria-controls="ordenes">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Ordenes de Compra</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ordenes">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/ordenes/ingresar.html">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/ordenes/busqueda.html">Búsqueda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/ordenes/facturas.html">Facturación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/ordenes/graficas.html">Informes y Estadísticas</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#adqui" aria-expanded="false" aria-controls="adqui">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Adquisición</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="adqui">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Generar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Facturación</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#pagos" aria-expanded="false" aria-controls="pagos">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Pagos</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="pagos">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pagos Entrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pagos Salientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Generación de informes</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#citas" aria-expanded="false" aria-controls="citas">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Citas</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="citas">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calendario</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#repor" aria-expanded="false" aria-controls="repor">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Reportes</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="repor">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Generar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#prove" aria-expanded="false" aria-controls="prove">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Proveedores</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="prove">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agregar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#inven" aria-expanded="false" aria-controls="inven">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Inventario</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="inven">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agregar Nuevo Producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Generación de pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Generación de lista de existencias</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#envios" aria-expanded="false" aria-controls="envios">
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <span class="menu-title">Envios</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="envios">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualizar/Búsqueda</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+
+    <li class="nav-item sidebar-actions">
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#traba" aria-expanded="false" aria-controls="traba">
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            <span class="menu-title">Control Trabajadores</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="traba">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro de Empleados y Visualización</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Seguimiento de actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Evaluación de Desempeño</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#usuario" aria-expanded="false" aria-controls="usuario">
+            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            <span class="menu-title">Nuevo Usuario</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="usuario">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ingresar</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,3 @@
+.recortar-imagen {
+    clip-path: circle(100% at center); /* Recorta la imagen en forma de círculo */
+}
